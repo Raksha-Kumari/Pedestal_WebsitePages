@@ -1,0 +1,533 @@
+/* Style for the fixed header */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Change as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's above other elements */
+    padding: 10px 20px; /* Adjust as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Change as needed */
+}
+
+.A{
+    width: 100px;
+    float : left;
+}
+
+.site-header .search-bar {
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.site-header .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.site-header .auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-header .auth-buttons button {
+    background-color: #007BFF; /* Button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.site-header .auth-buttons button:hover {
+    background-color: #0056b3; /* Hover color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Whatsapp */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+
+/* General content styling */
+.about-us {
+    padding: 20px;
+    background-color: #f9f9f9; /* Adjust as needed */
+    margin: 0;
+    width: 100%;
+}
+
+.about-us-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us-image {
+    flex: 1;
+    min-width: 300px; /* Ensure the image doesn't get too small on narrow screens */
+}
+
+.about-us-image img {
+    width: 100%;
+    height: auto;
+}
+
+.about-us-content {
+    flex: 2;
+    padding: 20px;
+    color: black;
+    background-color: white;
+    font-size: 16px; /* Adjust as needed */
+}
+
+.about-us-content h2 {
+    font-size: 24px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.about-us-content p {
+    margin-bottom: 20px;
+}
+
+.about-us-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us-content ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about-us-content ul li::before {
+    content: "✔"; /* Or use any icon */
+    margin-right: 10px;
+    color:#0693e3; /* Adjust as needed */
+}
+
+/*AboutUs image*/
+.about-us {
+    padding: 0px;
+    background-color: #f9f9f9; /*Adjust as needed
+    position:relative;*/
+}
+
+.about-us-image-container {
+    position: relative;
+    text-align: center;
+    color: black;
+    width: 100%;
+    height: 45%;
+}
+
+.about-us-image {
+    width: 100%;
+    height: auto;
+}
+
+.values{
+    width:65px;
+    height:50px;
+}
+
+.image-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bolder;
+    color: black; /*Ensure the text is readable on the image*/
+}
+
+/*.values {
+    padding: 20px;
+}
+
+.values-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.values-buttons button {
+    background-color: #FF5722;  Button color
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.values-buttons button:hover {
+    background-color: #E64A19; Hover color 
+}*/
+
+/* header {
+    background-color: #0033cc;
+    color: white;
+    padding: 1rem;
+    text-align: center; */
+    /* position: fixed; */
+/* }
+
+.A{
+    width: 120px;
+    float : left;
+}
+
+h1{
+    margin-bottom: ;
+    text-align:left;
+}
+
+header .header-content {
+    display: contents;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: black;
+    margin: 0 1rem;
+    text-decoration: none; 
+}*/
+
+/* Base Button Styles
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+  }
+  
+  Login Button Styles
+  .login-btn {
+    background-color: #007BFF; /* Blue color 
+    color: white;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover 
+  }
+  
+  /* Register Button Styles 
+  .register-btn {
+    background-color: #28A745; /* Green color 
+    color: white;
+  }
+  
+  .register-btn:hover {
+    background-color: #1e7e34; /* Darker green on hover
+  }*/
+  
+/* section {
+    padding: 8rem;
+    background: #f4f4f4;
+    margin-bottom: 1rem;
+}
+
+.about .aboutUs {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; 
+}
+
+section.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.values ul li {
+    display: inline;
+    background: #ff6600;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+} */
+
+/* section.problems .problem {
+    background: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+} */
+
+/* footer {
+    background: #0033cc;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .quick-links {
+    list-style: none;
+    padding: 0;
+}
+
+footer .quick-links li {
+    margin: 0.5rem 0;
+}
+
+footer .quick-links a {
+    color: white;
+    text-decoration: none;
+} */
+
+.meet-image {
+    width: 85%;
+    margin-left: 125px;
+    height: 85%;
+}
+
+.card-container {
+    display: flex;
+    gap: 40px;
+    margin-left: 200px;
+    padding: 0px 0px;
+}
+
+:root{
+    --card1-gradient-color1: #050C9C;
+    --card1-gradient-color2: #3ABEF9;
+}
+
+.card {
+    /* background-color: #9eeef5; */
+    background-image: linear-gradient(to bottom right, #0d679b,#15b67b);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 500px;
+    text-align: center;
+    box-shadow: 2px 6px 20px black;
+}
+
+.card:hover{
+    transform: scale(1.1);
+  }
+
+  /* .img2{
+    margin-bottom:2px;
+    padding-bottom: 2px;
+    margin-top: 2px;
+  } */
+
+.card img {
+    width: 80px;
+    align-items: center;
+    height: auto;
+    margin-left:210px;
+    box-shadow: 2px 6px 10px black;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 16px 0;
+    font-weight: bolder;
+}
+
+.card p {
+    padding: 0 16px;
+    font-size: 1em;
+    color: white;
+}
+
+.card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 16px 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Map styling */
+.map-and-content {
+    padding: 20px;
+    background-color: #fff; /* Adjust as needed */
+    margin: 20px 0; /* Adjust as needed */
+}
+
+.map-and-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px; /* Adjust as needed */
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.content {
+    flex: 1;
+}
+
+.problem{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:35px;
+    font-display: bolder;
+    color:#054e9c;
+    /* width:100px; */
+}
+.solution{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:35px;
+    font-display: bolder;
+    color:#054e9c;
+}
+
+
+.map-and-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.map-and-content ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.map-and-content ul li::before {
+    content: "✔"; /* Or use any icon */
+    margin-right: 10px;
+    color:#0693e3; /* Adjust as needed */
+}
+
+/*.content h3 {
+    font-size: 24px; Adjust as needed
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}*/
+
+.map-image {
+    flex: 2;
+    text-align: right;
+}
+
+.map-image img {
+    max-width: 110%;
+    height: auto;
+    box-shadow: 2px 6px 50px black;
+}
+
+/* Footer Styling */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #002D72; /* Footer background color */
+    color: white;
+    padding: 40px;
+    box-shadow: 2px 6px 20px #002e72;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    color: deepskyblue;
+}
+
+.footer-column ul li a:hover {
+    color: #FF5722; /* Link hover color */
+}
+
+.footer-column p, .footer-column a {
+    margin-bottom: 10px;
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+.footer-column p a {
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.footer-column p a:hover {
+    color: #FF5722; /* Email link hover color */
+}
