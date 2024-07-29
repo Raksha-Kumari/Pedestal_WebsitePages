@@ -14,18 +14,6 @@
     <link rel="stylesheet" href="about_us.css">
 </head>
 <body>
-    <!-- <header>
-        <div class="header-content">
-            <img src="../pictures/Plogo7.png" class="A">
-            <h1>Pedestal</h1>
-            <nav>
-                 <a href="#">Login</a>
-                <button class="btn login-btn" onclick="window.location.href='login.html'">Login</button>
-                <a href="#">Register</a>
-                <button class="btn register-btn" onclick="window.location.href='register.html'">Register</button>
-            </nav>
-        </div>
-    </header> -->
 
     <!-- Whatapp -->
     <a href="https://wa.me/1234567890" class="whatsapp-icon" target="_blank">
@@ -147,62 +135,9 @@
                             }
                         </style>
                     </div>
-                    <!-- <ul> -->
-                        <!-- <li><strong>400+ five star rating!</strong></li>
-                        <li><strong>98% client retention!</strong></li>
-                        <li>We provide a range of top-tier digital services under one roof.</li>
-                        <li>Our team of professionals brings a wealth of industry experience.</li>
-                        <li>We are dedicated to delivering superior quality in every project.</li> -->
-                    <!-- </ul> -->
                 </div>
             </div>
         </section>
-
-        <!-- <section class="about-us">
-            <div class="about-us-image-container">
-                <img src="../pictures/Edtech.png" alt="About Us Image" class="about-us-image">
-                <div class="image-text">About Us</div>
-            </div>
-            Other content
-        </section> -->
-
-        <!-- <section class="values">
-            <h2>Our Values</h2>
-            <div class="values-buttons">
-                <button>Integrity</button>
-                <button>Excellence</button>
-                <button>Innovation</button>
-                <button>Customer-Centricity</button>
-                <button>Team Work</button>
-            </div>
-        </section> -->
-    
-
-    <!-- <section class="about">
-        <div class="aboutUs">About Us</div>
-        <h2>About Us</h2>
-        <p>Pedestal Techno World Private Limited...</p>
-        <img src="path-to-image.jpg" alt="Image description">
-    </section>
-
-    <section class="values">
-        <h3>Our Values</h3>
-        <ul>
-            <li>Integrity</li>
-            <li>Excellence</li>
-            <li>Innovation</li>
-            <li>Customer-Centricity</li>
-            <li>Team Work</li>
-        </ul>
-    </section> -->
-
-    <!-- <section class="problems">
-        <h2>Problems in Existing Marketplace</h2>
-        <div class="problem">
-            <h4>Mismatch of Skills</h4>
-            <p>Problem: Graduates may lack the specific skills needed...</p>
-        </div>
-    </section> -->
 
     <!-- <img src="../pictures/Meet1.jpg" alt="Meet Image" class="meet-image"> -->
     <title>Pedestal Images</title>
@@ -218,26 +153,6 @@
             width: 100%;
             height: 80%;
         }
-        /* .slick-prev, .slick-next {
-            font-size: 0;
-            color: deeppink;
-            background: black;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-        }
-        .slick-prev:before, .slick-next:before {
-            font-family: 'slick';
-            font-size: 30px;
-            line-height: 1;
-            opacity: .9;
-        }
-        .slick-prev:before {
-            content: '⬅️';
-        }
-        .slick-next:before {
-            content: '➡️';
-        } */
     </style>
 
     <body>
@@ -284,25 +199,6 @@
         </div>
     </div>
 
-    <!-- <section class="solutions">
-        <h2>Solutions</h2>
-        <ul>
-            <li>Certification Program</li>
-            <li>Campus Connect Program</li>
-            <li>Placement Guarantee Program</li>
-        </ul>
-    </section> -->
-
-    <!-- <footer>
-        <div class="footer-content">
-            <h3>Pedestal Techno World</h3>
-            <ul class="quick-links">
-                <li><a href="#">About Pedestal</a></li>
-                <li><a href="#">Course Category</a></li>
-            </ul>
-        </div>
-    </footer> -->
-
     <!-- Map and Content -->
     <section class="map-and-content">
         <div class="map-and-content-container">
@@ -343,28 +239,6 @@
                     <li>Placement Guarantee Program</li>
                 </ol>
             </div>
-            <!-- <div class="solutions">
-                <h3>Solutions</h3>
-                <ol class="list2">
-                    <li>Certification program in:
-                        <ol>
-                        <li>Artificial Intelligence</li>
-                        <li>Cyber Security</li>
-                        <li>Coding</li>
-                        <li>Data Science</li>
-                        <li>Designing (UI/UX/Graphics/Motion/Video’s)</li>
-                        <li>Digital Marketing</li>
-                        <li>Full Stack Development</li>
-                        <li>Machine Learning</li>
-                        <li>Mobile Application Development</li>
-                        <li>Banking Professionals Programs</li>
-                        <li>Management Professionals Programs</li>
-                        </ol>
-                    </li>
-                    <li>Campus Connect Program</li>
-                    <li>Placement Guarantee Program</li>
-                </ol>
-            </div> -->
             <div class="map-image">
                 <img src="../pictures/map new 01 png.png" alt="Map of India">
             </div>
@@ -451,6 +325,7 @@
             <style>
                 .cycle{
                     text-align: center;
+                    margin-bottom: 50px;
                 }
                 h5{
                     font-weight: bolder;
@@ -460,11 +335,37 @@
             </style>
         </div>
         <section class="LifeCycle">
-            <title>Life Cycle At Pedestal</title>
-            <img src="../pictures/LifeCycle.png" alt="LifeCycle">
+            <div class="image-container">
+                <img src="../pictures/LifeCycle.png" alt="LifeCycle">
+            </div>
             <style>
-                .LifeCycle{
+                /* .LifeCycle{
                     margin-left: 170px;
+                } */
+                .image-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100vh; /* Full viewport height to center the image vertically */
+                    padding: 1rem;
+                }
+                .image-container img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                /* Responsive Styles */
+                @media (min-width: 600px) {
+                    .image-container {
+                        padding: 2rem;
+                    }
+                }
+
+                @media (min-width: 900px) {
+                    .image-container {
+                        padding: 3rem;
+                    }
                 }
             </style>
         </section>
@@ -474,6 +375,8 @@
             <style>
                 .Success-Stories{
                     text-align: center;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
                 }
                 h5{
                     font-weight: bolder;
@@ -483,11 +386,36 @@
             </style>
         </div>
         <section class="Success">
-            <title>Success-Stories</title>
+            <div class="image-containers">
             <img src="../pictures/Succes.png" alt="Success">
             <style>
-                .Success{
+                /* .Success{
                     margin-left: 170px;
+                } */
+                .image-containers {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 120vh; /* Full viewport height to center the image vertically */
+                    padding: 1rem;
+                }
+                .image-containers img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                /* Responsive Styles */
+                @media (min-width: 600px) {
+                    .image-containers {
+                        padding: 2rem;
+                    }
+                }
+
+                @media (min-width: 900px) {
+                    .image-containers {
+                        padding: 3rem;
+                    }
                 }
             </style>
         </section>
@@ -536,19 +464,3 @@
 
 </body>
 </html>
-
-
-<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-222c8b42 elementor-section-stretched elementor-hidden-mobile elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="222c8b42" data-element_type="section" data-settings="{"stretch_section":"section-stretched","background_background":"classic"}" style="width: 537px; left: 0px;">
-    <div class="elementor-container elementor-column-gap-default">flex
-        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4452c465" data-id="4452c465" data-element_type="column">flex
-            <div class="elementor-widget-wrap elementor-element-populated">flex
-                <div class="elementor-element elementor-element-70460d45 elementor-widget elementor-widget-image" data-id="70460d45" data-element_type="widget" data-widget_type="image.default">
-                    <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="1182" height="332" src="https://www.eccouncil.org/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2024/06/Building-culture-Text-1.png.webp" class="attachment-full size-full wp-image-100571" alt srcset="https://www.eccouncil.org/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2024/06/Building-culture-Text-1.png.webp 1182w, https://www.eccouncil.org/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2024/06/Building-culture-Text-1-300x84.png.webp 300w, https://www.eccouncil.org/wp-content/webp-express/webp-images/doc-ro…/wp-content/uploads/2024/06/Building-culture-Text-1-1024x288.png.webp 1024w, https://www.eccouncil.org/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2024/06/Building-culture-Text-1-768x216.png.webp 768w" sizes="(max-width: 1182px) 100vw, 1182px">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
