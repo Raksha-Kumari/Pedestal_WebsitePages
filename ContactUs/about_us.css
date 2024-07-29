@@ -338,8 +338,16 @@ footer .quick-links a {
 .card-container {
     display: flex;
     gap: 40px;
-    margin-left: 200px;
+    /* margin-left: 200px;*/
     padding: 0px 0px;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 :root{
@@ -356,6 +364,13 @@ footer .quick-links a {
     width: 500px;
     text-align: center;
     box-shadow: 2px 6px 20px black;
+
+
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 400px;
+    flex: 1 1 300px;
+    text-align: center;
 }
 
 .card:hover{
@@ -372,7 +387,7 @@ footer .quick-links a {
     width: 80px;
     align-items: center;
     height: auto;
-    margin-left:210px;
+    margin-left:140px;
     box-shadow: 2px 6px 10px black;
 }
 
@@ -467,12 +482,14 @@ footer .quick-links a {
 .map-image {
     flex: 2;
     text-align: right;
+    justify-content: right;
 }
 
 .map-image img {
     max-width: 110%;
     height: auto;
     box-shadow: 2px 6px 50px black;
+    justify-content: right;
 }
 
 /* Footer Styling */
