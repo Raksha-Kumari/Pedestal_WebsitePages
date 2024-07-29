@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .site-header .logo {
@@ -136,12 +137,14 @@ header .header-content {
     color:brown;
     font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
-    top: 35%;
-    margin: 0;
-    margin-top: 40px;
+    /* text-align: center; */
+    /* margin-bottom: 50px; */
+    top: 38%;
+    /* margin: 0; */
+    /* margin-top: 40px; */
     position: absolute;
-    top: 35%;
-    left: 35%;
+    /*top: 35%;*/
+    left: 38%;
 }
 
 .paragraph-containerr {
@@ -195,7 +198,8 @@ header .header-content {
 .D{
     width:90%;
     height:80%;
-    margin-left: 70px;
+    /* margin-left: 70px; */
+    text-align: center;
 }
 
 .faculty ,p{
@@ -268,7 +272,8 @@ header .header-content {
 }
 
 .build{
-    margin-left: 250px;
+    /* margin-left: 250px; */
+    text-align: center;
 }
 
 .digi{
@@ -296,10 +301,12 @@ header .header-content {
 }
 
 .F , h4{
-    margin-left: 670px;
+    text-align: center;
+    /* margin-left: 670px; */
     text-decoration: underline;
     font-weight: bold;
     font-size: xx-large;
+    align-content: center;
 }
 
 .question{
@@ -330,6 +337,7 @@ header .header-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    text-align: center;
 }
 
 .other-courses .course img {
@@ -339,8 +347,8 @@ header .header-content {
 }
 
 .o{
-    align-self: center;
-    margin-left: 600px;
+    text-align: center;
+    /* margin-left: 600px; */
     margin-top: 5px;
     margin-bottom: 70px;
 }
@@ -364,6 +372,7 @@ header .header-content {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+    text-align: left;
 }
 
 .footer-column h3 {
@@ -390,6 +399,7 @@ header .header-content {
 
 .footer-column ul li a:hover {
     color: #FF5722; /* Link hover color */
+    text-decoration: underline;
 }
 
 .footer-column p, .footer-column a {
@@ -405,6 +415,12 @@ header .header-content {
 
 .footer-column p a:hover {
     color: #FF5722; /* Email link hover color */
+    text-decoration: underline;
+}
+
+.footer-column a:hover {
+    color: #FF5722; /* Link hover color */
+    text-decoration: underline;
 }
 
 /* .footer-container {
