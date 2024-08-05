@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,79 +9,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="register.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        body {
-            background-color:rgb(248, 248, 248);
-        }
-    </style>
 </head>
 
 <body>
-    <div id="container-register">
-        <img class="logo" src="../pictures/Plogo4.png">
-        <div id="title">
-            Register 
-            <style>
-                .logo{
-                    margin:0px;
-                    border-radius:80%;
-                    border-image-width: 0px;
-                    height:50px;
-                    width:50px;
-                    align-items : center;
-                    margin-left:5px;
-                    margin-right:0px;
-                }
-            </style>
-        
-            
-        </div>
-
-        <form>
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">email</i>
+    <div class="page-container">
+        <div id="container-register">
+            <img class="logo" src="../pictures/Plogo4.png">
+            <div id="title">Register</div>
+            <form>
+                <div class="input-container">
+                    <i class="material-icons input-addon">email</i>
+                    <input id="email" placeholder="Email" type="email" required class="validate" autocomplete="off">
                 </div>
-                <input id="email" placeholder="Email" type="email" required class="validate" autocomplete="off">
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">face</i>
+                <div class="input-container">
+                    <i class="material-icons input-addon">face</i>
+                    <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
                 </div>
-                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="input">
-                <div class="input-addon">
-                    <i class="material-icons">vpn_key</i>
+                <div class="input-container">
+                    <i class="material-icons input-addon">vpn_key</i>
+                    <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
                 </div>
-                <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
+                <input type="submit" value="Register" />
+            </form>
+            <div class="privacy"><a href="#">Privacy Policy</a></div>
+            <div class="register">
+                Do you already have an account?
+                <a href="#"><button id="register-link" onclick="window.location.href='login.html'">Log In here</button></a>
             </div>
-
-            <input type="submit" value="Register" />
-        </form>
-
-        <div class="privacy">
-            <a href="#">Privacy Policy</a>
-        </div>
-
-        <div class="register">
-            Do you already have an account?
-            <a href="#"><button id="register-link"  onclick="window.location.href='login.html'">Log In here</button></a>
         </div>
     </div>
 </body>
+
 </html>
-<style>
-    body {
-      background-image: url('../pictures/Pedestal1.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-    }
-</style>
