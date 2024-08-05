@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us-Pedestal Techno World</title>
+    <!-- <link rel="stylesheet" href="responsive1.css"> -->
     <link rel="stylesheet" href="about_us.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
 
         <section class="about-us">
             <div class="about-us-image-container">
-                <img src="../pictures/Edtech.png" alt="About Us Image" class="about-us-image">
+                <img src="../pictures/Edtech.png" alt="About Us Image" class="about-us-images">
                 <div class="image-text">About Us</div>
             </div>
             <div class="about-us-container">
@@ -61,13 +62,10 @@
             
             <div class="carousel-container">
                 <div class="carousel">
-                    <!-- <div><img src="../pictures/Wipro1.png" alt="Wipro"></div> -->
                     <div><img src="../pictures/Accenture1.png" alt="Accenture"></div>
                     <div><img src="../pictures/Flipkart-logo.png" alt="Flipkart"></div>
                     <div><img src="../pictures/microsoft-logo.png" alt="Microsoft"></div>
                     <div><img src="../pictures/Infosys_logo.svg.png" alt="Infosys"></div>
-                    <!-- <div><img src="../pictures/Google.png" alt="Google"></div> -->
-                    <!-- <div><img src="../pictures/Mahindra.png" alt="Tech Mahindra"></div> -->
                     <div><img src="../pictures/amazon-logo-transparent.png" alt="Amazon"></div>
                 </div>
             </div>
@@ -78,19 +76,26 @@
                 $(document).ready(function(){
                     $('.carousel').slick({
                         infinite: true,
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
-                        autoplaySpeed: 0,
+                        autoplaySpeed: 10,
                         speed: 2000,
                         cssEase: 'linear',
                         arrows: false,
                         dots: false,
                         responsive: [
                             {
+                                breakpoint: 991,
+                                settings: {
+                                    slidesToShow: 4,
+                                    slidesToScroll: 1
+                                }
+                            },
+                            {
                                 breakpoint: 768,
                                 settings: {
-                                    slidesToShow: 3,
+                                    slidesToShow: 2,
                                     slidesToScroll: 1
                                 }
                             },
@@ -139,22 +144,20 @@
             </div>
         </section>
 
-    <!-- <img src="../pictures/Meet1.jpg" alt="Meet Image" class="meet-image"> -->
-    <title>Pedestal Images</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <style>
-        .carousel-container1 {
-            width: 90%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .carousel1 img {
-            width: 100%;
-            height: 80%;
-        }
-    </style>
-
+        <title>Pedestal Images</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        <style>
+            .carousel-container1 {
+                width: 90%;
+                margin: 0 auto;
+                padding: 0px 0;
+            }
+            .carousel1 img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
     <body>
         <div class="carousel-container1">
             <div class="carousel1">
@@ -164,10 +167,9 @@
                 <div><img src="../pictures/Meet5.jpg" alt="Meet5"></div>
                 <div><img src="../pictures/Meet8.jpg" alt="Meet8"></div>
                 <div><img src="../pictures/Meet9.jpg" alt="Meet9"></div>
-                <!-- Add more images as needed -->
             </div>
         </div>
-
+    
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script>
@@ -177,15 +179,43 @@
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     autoplay: true,
-                    autoplaySpeed: 700,
+                    autoplaySpeed: 2000,
                     speed: 500,
                     arrows: true,
                     dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                infinite: true,
+                                dots: true
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                arrows: false
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                arrows: false,
+                                dots: true
+                            }
+                        }
+                    ]
                 });
             });
         </script>
     </body>
-
+        
     <div class="card-container">
         <div class="card">
             <img src="../pictures/Mis1.png" alt="Image 1">
@@ -246,178 +276,64 @@
     </section>
 
     <title>Special Section</title>
-    <style>
-        .special-section {
-            background-image: linear-gradient(to bottom right, #5b9bc0,rgb(255, 255, 200),#52b993);
-            /* background-color: #f9f9f9; */
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .special-section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .special-content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .special-column {
-            flex: 1 1 30%;
-            max-width: 30%;
-            margin: 10px;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        @media (max-width: 768px) {
-            .special-column {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
-        }
-    </style>
+<body>
+    <div class="special-section">
+        <h2 class="Sp">WHAT WE HAVE SPECIAL</h2>
+        <div class="special-content">
+            <div class="special-column">
+                <ul>
+                    <li>BANKING/FINANCE ASSISTANCE</li>
+                    <li>ONLINE & OFFLINE LEARNING METHODOLOGIES</li>
+                    <li>GLOBAL RECOGNIZED CERTIFICATIONS</li>
+                    <li>MENTORSHIP BY INDUSTRY EXPERTS</li>
+                    <li>LIFE TIME PORTAL ACCESS</li>
+                </ul>
+            </div>
+            <div class="special-column">
+                <ul>
+                    <li>LIVE CLASSES & QA SESSIONS</li>
+                    <li>LIVE PROJECTS & CASE STUDIES</li>
+                    <li>PREMIUM TOOLS AND ACCESS</li>
+                    <li>PRE-PLACEMENT ACTIVITIES</li>
+                    <li>HOLISTIC PERSONALITY DEVELOPMENT</li>
+                </ul>
+            </div>
+            <div class="special-column">
+                <ul>
+                    <li>REAL TIME HR INSIGHTS</li>
+                    <li>MOCK DRILL HR SESSIONS</li>
+                    <li>INDUSTRY EXPERTS INTERACTIONS</li>
+                    <li>GROUP PROJECTS & NETWORK OPPORTUNITIES</li>
+                    <li>PLACEMENT OPPORTUNITIES WITH EMPLOYERS NETWORK</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
     <body>
-        <div class="special-section">
-            <h2 class="Sp">WHAT WE HAVE SPECIAL</h2>
-            <style>
-                .Sp{
-                    font-weight: bold;
-                }
-                .special-content{
-                    text-align: left;
-                }
-            </style>
-            <div class="special-content">
-                <div class="special-column">
-                    <ul>
-                        <li>BANKING/FINANCE ASSISTANCE</li>
-                        <li>ONLINE & OFFLINE LEARNING METHODOLOGIES</li>
-                        <li>GLOBAL RECOGNIZED CERTIFICATIONS</li>
-                        <li>MENTORSHIP BY INDUSTRY EXPERTS</li>
-                        <li>LIFE TIME PORTAL ACCESS</li>
-                    </ul>
+        <!-- Lifecycle Section -->
+        <section class="lifecycle">
+            <div class="lifecycle-container">
+                <div class="lifecycle-text">
+                    <h2>Lifecycle at Pedestal</h2>
                 </div>
-                <div class="special-column">
-                    <ul>
-                        <li>LIVE CLASSES & QA SESSIONS</li>
-                        <li>LIVE PROJECTS & CASE STUDIES</li>
-                        <li>PREMIUM TOOLS AND ACCESS</li>
-                        <li>PRE-PLACEMENT ACTIVITIES</li>
-                        <li>HOLISTIC PERSONALITY DEVELOPMENT</li>
-                    </ul>
-                </div>
-                <div class="special-column">
-                    <ul>
-                        <li>REAL TIME HR INSIGHTS</li>
-                        <li>MOCK DRILL HR SESSIONS</li>
-                        <li>INDUSTRY EXPERTS INTERACTIONS</li>
-                        <li>GROUP PROJECTS & NETWORK OPPORTUNITIES</li>
-                        <li>PLACEMENT OPPORTUNITIES WITH EMPLOYERS NETWORK</li>
-                    </ul>
+                <div class="lifecycle-image">
+                    <img src="../pictures/LifeCycle.png" alt="Lifecycle">
                 </div>
             </div>
-        </div>
-
-        <div class="cycle">
-            <h5>Life Cycle At Pedestal</h5>
-            <style>
-                .cycle{
-                    text-align: center;
-                    margin-bottom: 50px;
-                }
-                h5{
-                    font-weight: bolder;
-                    font-size: 70px;
-                    text-decoration:underline;
-                }
-            </style>
-        </div>
-        <section class="LifeCycle">
-            <div class="image-container">
-                <img src="../pictures/LifeCycle.png" alt="LifeCycle">
-            </div>
-            <style>
-                /* .LifeCycle{
-                    margin-left: 170px;
-                } */
-                .image-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 100vh; /* Full viewport height to center the image vertically */
-                    padding: 1rem;
-                }
-                .image-container img {
-                    max-width: 100%;
-                    height: auto;
-                }
-
-                /* Responsive Styles */
-                @media (min-width: 600px) {
-                    .image-container {
-                        padding: 2rem;
-                    }
-                }
-
-                @media (min-width: 900px) {
-                    .image-container {
-                        padding: 3rem;
-                    }
-                }
-            </style>
         </section>
-
-        <div class="Success-Stories">
-            <h5>Success-Stories</h5>
-            <style>
-                .Success-Stories{
-                    text-align: center;
-                    margin-top: 50px;
-                    margin-bottom: 50px;
-                }
-                h5{
-                    font-weight: bolder;
-                    font-size: 70px;
-                    text-decoration:underline;
-                }
-            </style>
-        </div>
-        <section class="Success">
-            <div class="image-containers">
-            <img src="../pictures/Succes.png" alt="Success">
-            <style>
-                /* .Success{
-                    margin-left: 170px;
-                } */
-                .image-containers {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 120vh; /* Full viewport height to center the image vertically */
-                    padding: 1rem;
-                }
-                .image-containers img {
-                    max-width: 100%;
-                    height: auto;
-                }
-
-                /* Responsive Styles */
-                @media (min-width: 600px) {
-                    .image-containers {
-                        padding: 2rem;
-                    }
-                }
-
-                @media (min-width: 900px) {
-                    .image-containers {
-                        padding: 3rem;
-                    }
-                }
-            </style>
+    
+        <!-- Success Stories Section -->
+        <section class="success-stories">
+            <div class="success-stories-container">
+                <div class="success-text">
+                    <h2>Success-Stories</h2>
+                </div>
+                <div class="success-image">
+                    <img src="../pictures/Succes.png" alt="Success">
+                </div>
+            </div>
         </section>
     </body>
 
@@ -449,8 +365,6 @@
         </div>
         <div class="footer-column">
             <h3>Get In Touch</h3>
-            <!-- <p>+91-9929934909</p>
-            <p>0141-3142014</p> -->
             <p class="Info1"> <a href="tel:+91-9929934909">+91-9929934909</a><br><a href="tel:0141-3142014 ">0141-3142014 </a></p>
             <p><a href="mailto:info@pedestaltechnoworld.com">info@pedestaltechnoworld.com</a></p>
             <div class="social-links">
