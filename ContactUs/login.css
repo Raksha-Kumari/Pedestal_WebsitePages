@@ -1,27 +1,37 @@
-html,body {
+body {
+	background-image: url('../pictures/Pedestal1.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding-top: 60px; /* Add padding to the top */
+}
+
+html, body {
 	height: 100%;
-	color: linear-gradient(to bottom right, rgb(7, 13, 85), rgb(88, 135, 207));
+	color: #FFF;
 }
 
 body.my-login-page {
 	font-size: 14px;
-	background-color: linear-gradient(to bottom right, rgb(7, 13, 85), rgb(88, 135, 207));
 }
 
-.my-login-page .brand   {
+.my-login-page .brand {
 	width: 100px;
 	height: 100px;
 	overflow: hidden;
 	border-radius: 50%;
-	margin: 40px auto;
+	margin: 20px auto; /* Adjust margin to move logo closer to the card */
 	box-shadow: 0 4px 8px rgba(0,0,0,.05);
 	position: relative;
 	z-index: 1;
-	background-color: linear-gradient(to bottom right, rgb(7, 13, 85), rgb(88, 135, 207));
 }
 
- .my-login-page .brand img {
-	align-items:center;
+.my-login-page .brand img {
+	align-items: center;
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -29,34 +39,29 @@ body.my-login-page {
 
 .my-login-page .card-wrapper {
 	width: 400px;
-	color: linear-gradient(to bottom right, rgb(7, 13, 85), rgb(88, 135, 207));
+	margin: auto;
+	margin-top: 10px; /* Adjust margin-top to move card closer to the logo */
 }
 
 .my-login-page .card {
 	border-color: transparent;
 	box-shadow: 0 4px 8px rgba(0,0,0,.05);
-    background-color: rgb(1, 1, 48);
+	background-color: rgb(1, 1, 48);
 }
 
 .my-login-page .card.fat {
 	padding: 10px;
-	color: linear-gradient(to bottom right, rgb(7, 13, 85), rgb(88, 135, 207));
 }
 
 .my-login-page .card .card-title {
 	margin-bottom: 30px;
-	color:white;
-}
-.email{
-  color:white;
-}
-.password{
-	color:white;
+	color: white;
 }
 
-.custom-control-label{
-	color:white;
+.email, .password, .custom-control-label {
+	color: white;
 }
+
 .my-login-page .form-control {
 	border-width: 2.3px;
 }
@@ -91,7 +96,9 @@ body.my-login-page {
 		padding: 15px;
 	}
 }
-.Last
-{
-	color:white;
+
+.Last {
+	text-align: center;
+	margin-top: 10px;
+	color: white;
 }
